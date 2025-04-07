@@ -1,0 +1,15 @@
+services:
+    localstack:
+        container_name: localstack
+        image: localstack/localstack:3
+        ports:
+            - 4566:4566
+            - 4510-4559:4510-4559
+        environment:
+            - EAGER_SERVICE_LOADING=1
+            - SERVICES=sts,ssm,cloudformation,iam,s3,ses,sqs,dynamodb,lambda,apigateway,ecr
+            - AWS_DEFAULT_REGION=ap-northeast-1
+            - PERSISTENCE=1
+        volumes:
+            - ./localstack/volume:/var/lib/localstack
+
