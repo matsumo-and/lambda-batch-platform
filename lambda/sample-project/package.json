@@ -1,5 +1,5 @@
 {
-  "name": "batch-a",
+  "name": "sample-function",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",

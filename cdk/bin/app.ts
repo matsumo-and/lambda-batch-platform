@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
-import { BatchAStack } from "../lib/sample-stack";
+import { SampleStack } from "../lib/sample-stack";
 
 const app = new cdk.App();
-new BatchAStack(app, "BatchAStack", {
+new SampleStack(app, "SampleStack", {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
